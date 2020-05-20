@@ -1,0 +1,14 @@
+SOI - producent-konsument - MONITORY
+Program:
+  Realizuje problem producent-konsument na trzech buforach zrealizowanych jako monitor.
+
+Zadanie specjalne: 
+    Istnieją dwie epoki działania buforów, epoka 2 pojawia się,
+     gdy pobraną wartością z bufora będzie element o wyższym priorytecie (2)
+     W epoce 1 (początkowej) konsument pobiera po 1 elemencie.
+     W epoce 2 konsument pobiera wszystkie elementy z bufora (w kolejności FIFO), 
+          jeżeli pośród nich był przynajmniej jeden element specjalny (wyjęty jako pierwszy),
+               to program pozostaje w epoce 1,
+          natomiast jeśli nie było żadnego elmentu specjalnego, to powraca do stanu epoki 1;
+
+Kompilacja:  g++ main.cpp -lrt -lpthread
