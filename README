@@ -1,4 +1,5 @@
 SOI - producent-konsument - MONITORY
+01.2020
 Program:
   Realizuje problem producent-konsument na trzech buforach zrealizowanych jako monitor.
 
